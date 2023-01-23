@@ -40,10 +40,30 @@ public class Operators {
     }
 
 
+    /**
+     * A function that will calculate and print the value of the following equation
+     * result =  (3.31 * a^2 + 2.01 * b^3) / (7.16 * b^2 + 2.01 * a^3)
+     * @param a This is the first parameter to problemThree method
+     * @param b This is the second parameter to problemThree method
+     */
+    public void problemThree(double a, double b) {
+        double result;
+
+        double aSqr = a * a;
+        double bSqr = b * b;
+        double aCube = aSqr * a;
+        double bCube = bSqr * b;
+
+        result =  (3.31 * aSqr + 2.01 * bCube) / (7.16 * bSqr + 2.01 * aCube);
+        System.out.println("Result: " + result);
+    }
+
+
     public static void main(String[] args) {
         Operators test = new Operators();
 //        test.problemOne();
-        test.problemTwo(10.5);
+//        test.problemTwo(10.5);
+        test.problemThree(5,10.5);
 
     }
 }
