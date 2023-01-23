@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Operators {
 
     /**
-     * * A function that takes two numbers input from the user, and then calculates and prints the values of their
+     * A function that takes two numbers input from the user, and then calculates and prints the values of their
      * addition, subtraction, multiplication, and division (quotient and reminder)
      */
     public void problemOne() {
@@ -59,11 +59,25 @@ public class Operators {
     }
 
 
+    /**
+     * A function that will take two parameters and print the maximum value.
+     * @param x This is the first parameter to problemFour method
+     * @param y This is the second parameter to problemFour method
+     */
+    public void problemFour(int x, int y) {
+        int maxValue;
+
+        maxValue = x > y ? x : y;
+        System.out.println("Maximum Value: " + maxValue);
+    }
+
+
     public static void main(String[] args) {
         Operators test = new Operators();
 //        test.problemOne();
 //        test.problemTwo(10.5);
-        test.problemThree(5,10.5);
+//        test.problemThree(5,10.5);
+        test.problemFour(50,-20);
 
     }
 }
