@@ -129,7 +129,6 @@ public class Conditions {
         } else {
             System.out.println("Not a valid operation");
         }
-
     }
 
     public static void main(String[] args) {
