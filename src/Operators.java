@@ -104,7 +104,6 @@ public class Operators {
      * a = Value when x is rounded up to the nearest integer
      * b = Value when x is rounded down to the nearest integer
      * c = Absolute value of x
-     *
      * @param x This is the first parameter to problemFive method
      */
     public void problemSix(double x) {
